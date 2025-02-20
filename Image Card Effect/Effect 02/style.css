@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: o;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgb(23, 23, 23);
+    transition: all 0.5s;
+    transform: translateY(100%);
+}
+
+.container:hover .content {
+    transform: translateY(0);
+}
+
+.container:hover img {
+    transform: translateY(-30%);
+}
